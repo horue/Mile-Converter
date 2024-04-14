@@ -1,4 +1,4 @@
-
+import sys
 
 
 def converter(milhas):
@@ -24,13 +24,12 @@ def pergunta():
 
 def outro():
     res=input('Deseja converter outro valor? ')
-    if res == 's' or "S":
+    if res in ['s','S']:
         return
-    elif res == 'n' or "N":
-        return False
+    elif res in ['n', 'N']:
+        sys.exit
 
-
-while True:
+def main():
     milhas = pergunta()
     converter(milhas)
     outro()
