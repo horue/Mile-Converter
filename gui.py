@@ -16,7 +16,7 @@ def m(root):
 def main():
     root = tk.Tk()
     root.title("Mile Converter")
-    root.geometry('400x300')
+    root.geometry('250x100')
     root.resizable(False, False)
                 
     m(root)
