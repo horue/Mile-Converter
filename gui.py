@@ -1,8 +1,16 @@
 import tkinter as tk
 
 
-def m(root):
+def convert(e1):
     pass
+
+
+def m(root):
+    e1 = tk.Entry(root)
+    e1.pack()
+
+    b1 = tk.Button(root, text='Convert', command=lambda:convert(e1))
+    b1.pack()
 
 
 def main():
