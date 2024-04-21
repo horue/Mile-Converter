@@ -8,7 +8,8 @@ def m(root):
 def main():
     root = tk.Tk()
     root.title("Mile Converter")
-    root.resizable(True, True)
+    root.geometry('400x300')
+    root.resizable(False, False)
                 
     m(root)
 
