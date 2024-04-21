@@ -2,7 +2,9 @@ import tkinter as tk
 
 
 def convert(e1):
-    pass
+    miles = e1.get()
+    final = float(miles) * 1.6
+    print(final)
 
 
 def m(root):
@@ -11,6 +13,9 @@ def m(root):
 
     b1 = tk.Button(root, text='Convert', command=lambda:convert(e1))
     b1.pack()
+
+    l1 = tk.Label(root)
+    l1.pack()
 
 
 def main():
