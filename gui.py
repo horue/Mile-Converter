@@ -2,20 +2,21 @@ import tkinter as tk
 from tkinter import *
 
 
-def convert(root, e1):
+def convert(root, e1, l1):
     miles = e1.get()
     final = float(miles) * 1.6
     print(final)
 
-    l1 = tk.Label(root, text=final)
-    l1.pack_forget
-    l1.pack()
+    l1.config(text=final)
 
 def m(root):
     e1 = tk.Entry(root)
     e1.pack()
 
-    b1 = tk.Button(root, text='Convert', command=lambda:convert(root, e1))
+    l1 = tk.Label(root, text="Waiting for value")
+    l1.pack()
+
+    b1 = tk.Button(root, text='Convert', command=lambda:convert(root, e1,l1))
     b1.pack()
 
 
