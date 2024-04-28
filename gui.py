@@ -5,7 +5,7 @@ from tkinter import *
 def convert(e1, l1):
     miles = e1.get()
     final = float(miles) * 1.6
-    l1.config(text=final)
+    l1.config(text=f'{miles} miles is quals to {final} kilometers')
 
 def m(root):
     l2 = tk.Label(root, text="Mile Converter")
@@ -14,7 +14,7 @@ def m(root):
     e1 = tk.Entry(root)
     e1.pack(pady=10)
 
-    l1 = tk.Label(root, text="No value converted yet.")
+    l1 = tk.Label(root, text="No values converted yet.")
     l1.pack()
 
     b1 = tk.Button(root, text='Convert', command=lambda:convert(e1,l1))
